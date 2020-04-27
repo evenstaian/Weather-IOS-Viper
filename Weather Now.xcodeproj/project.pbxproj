@@ -19,6 +19,9 @@
 		1D6100E12456A4170068C625 /* ViperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6100E02456A4170068C625 /* ViperViewController.swift */; };
 		1D6100E42456A5A30068C625 /* HomePresenterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6100E32456A5A30068C625 /* HomePresenterType.swift */; };
 		1D6100E62456A64D0068C625 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6100E52456A64D0068C625 /* HomePresenter.swift */; };
+		1D6100EB2456ADC80068C625 /* HomeInteractorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6100EA2456ADC80068C625 /* HomeInteractorType.swift */; };
+		1D6100ED2456AE840068C625 /* InteractorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6100EC2456AE840068C625 /* InteractorType.swift */; };
+		1D6100EF2456AF9A0068C625 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6100EE2456AF9A0068C625 /* HomeInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,9 @@
 		1D6100E02456A4170068C625 /* ViperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViperViewController.swift; sourceTree = "<group>"; };
 		1D6100E32456A5A30068C625 /* HomePresenterType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenterType.swift; sourceTree = "<group>"; };
 		1D6100E52456A64D0068C625 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		1D6100EA2456ADC80068C625 /* HomeInteractorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractorType.swift; sourceTree = "<group>"; };
+		1D6100EC2456AE840068C625 /* InteractorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractorType.swift; sourceTree = "<group>"; };
+		1D6100EE2456AF9A0068C625 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +119,7 @@
 		1D6100D02456A1450068C625 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				1D6100E92456AD8A0068C625 /* Interactor */,
 				1D6100E22456A56A0068C625 /* Presenter */,
 				1D6100DD2456A3B10068C625 /* View */,
 				1D6100D12456A15B0068C625 /* Builder */,
@@ -143,6 +150,7 @@
 				1D6100D92456A1FC0068C625 /* PresenterType.swift */,
 				1D6100DB2456A26E0068C625 /* BuilderType.swift */,
 				1D6100E02456A4170068C625 /* ViperViewController.swift */,
+				1D6100EC2456AE840068C625 /* InteractorType.swift */,
 			);
 			path = Viper;
 			sourceTree = "<group>";
@@ -179,6 +187,15 @@
 				1D6100C124569F750068C625 /* LaunchScreen.storyboard */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		1D6100E92456AD8A0068C625 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				1D6100EA2456ADC80068C625 /* HomeInteractorType.swift */,
+				1D6100EE2456AF9A0068C625 /* HomeInteractor.swift */,
+			);
+			path = Interactor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,11 +268,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D6100ED2456AE840068C625 /* InteractorType.swift in Sources */,
+				1D6100EB2456ADC80068C625 /* HomeInteractorType.swift in Sources */,
 				1D6100DC2456A26E0068C625 /* BuilderType.swift in Sources */,
 				1D6100CF2456A08C0068C625 /* MainUserInterfaceBuilder.swift in Sources */,
 				1D6100D32456A1690068C625 /* HomeBuilder.swift in Sources */,
 				1D6100E42456A5A30068C625 /* HomePresenterType.swift in Sources */,
 				1D6100E12456A4170068C625 /* ViperViewController.swift in Sources */,
+				1D6100EF2456AF9A0068C625 /* HomeInteractor.swift in Sources */,
 				1D6100DF2456A3CF0068C625 /* HomeViewController.swift in Sources */,
 				1D6100D72456A1BF0068C625 /* ViewType.swift in Sources */,
 				1D6100DA2456A1FC0068C625 /* PresenterType.swift in Sources */,
