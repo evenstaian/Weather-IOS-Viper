@@ -18,7 +18,7 @@ class HomeInteractor: HomeInteractorType {
     }
     
     // MARK: API
-    func loadWheather() {
+    func loadWheather(for model: WeatherModelType) {
         
     }
     

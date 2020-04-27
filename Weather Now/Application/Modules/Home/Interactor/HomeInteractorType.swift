@@ -14,9 +14,9 @@ enum HomeInteractorError: Error {
 }
 
 protocol HomeInteractorDelegate: class {
-    func didUpdate()
+    func didUpdate(model: WeatherModelType)
 }
 
 protocol HomeInteractorType {
-    func loadWheather()
+    func loadWheather(for model: WeatherModelType)
 }
