@@ -11,8 +11,8 @@ import Foundation
 class HomeViewController<P: HomePresenterType> : ViperViewController<P> {
     
     override init(presenter: P){
-        self.view.backgroundColor = .red
         super.init(presenter: presenter)
+        self.view.backgroundColor = .red
     }
     
     required init?(coder aDecoder: NSCoder) {

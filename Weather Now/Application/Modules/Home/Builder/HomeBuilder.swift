@@ -14,10 +14,10 @@ class HomeBuilder: BuilderType {
     func build() -> UIViewController {
         //let interactor
         //let router
-        //let presenter
+        let presenter = HomePresenter()
         //let dataSource
         //let delegate
-        //let view
+        let view = HomeViewController<HomePresenter>.init(presenter: presenter)
         
         //interactor.delegate = presenter
         //presenter.delegate

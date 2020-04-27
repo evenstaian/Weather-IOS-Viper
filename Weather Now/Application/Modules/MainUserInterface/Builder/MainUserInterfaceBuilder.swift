@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class MainUserInterfaceBuilder {
+class MainUserInterfaceBuilder: BuilderType {
     
     lazy var currentWindow: UIWindow = {
         let window = UIWindow(frame: UIScreen.main.bounds)

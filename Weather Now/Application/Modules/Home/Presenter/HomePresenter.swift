@@ -19,7 +19,7 @@ class HomePresenter: HomePresenterType {
     }
     
     func viewWillBecomeActive() {
-        <#code#>
+        
     }
     
     // MARK: Private
