@@ -22,6 +22,8 @@
 		1D6100EB2456ADC80068C625 /* HomeInteractorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6100EA2456ADC80068C625 /* HomeInteractorType.swift */; };
 		1D6100ED2456AE840068C625 /* InteractorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6100EC2456AE840068C625 /* InteractorType.swift */; };
 		1D6100EF2456AF9A0068C625 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6100EE2456AF9A0068C625 /* HomeInteractor.swift */; };
+		1D6100F32456B2560068C625 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6100F22456B2560068C625 /* WeatherModel.swift */; };
+		1D6100F52456B2670068C625 /* WeatherModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6100F42456B2670068C625 /* WeatherModelType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		1D6100EA2456ADC80068C625 /* HomeInteractorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractorType.swift; sourceTree = "<group>"; };
 		1D6100EC2456AE840068C625 /* InteractorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractorType.swift; sourceTree = "<group>"; };
 		1D6100EE2456AF9A0068C625 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		1D6100F22456B2560068C625 /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
+		1D6100F42456B2670068C625 /* WeatherModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModelType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +123,7 @@
 		1D6100D02456A1450068C625 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				1D6100F02456B1FF0068C625 /* Model */,
 				1D6100E92456AD8A0068C625 /* Interactor */,
 				1D6100E22456A56A0068C625 /* Presenter */,
 				1D6100DD2456A3B10068C625 /* View */,
@@ -198,6 +203,15 @@
 			path = Interactor;
 			sourceTree = "<group>";
 		};
+		1D6100F02456B1FF0068C625 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1D6100F22456B2560068C625 /* WeatherModel.swift */,
+				1D6100F42456B2670068C625 /* WeatherModelType.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -274,10 +288,12 @@
 				1D6100CF2456A08C0068C625 /* MainUserInterfaceBuilder.swift in Sources */,
 				1D6100D32456A1690068C625 /* HomeBuilder.swift in Sources */,
 				1D6100E42456A5A30068C625 /* HomePresenterType.swift in Sources */,
+				1D6100F52456B2670068C625 /* WeatherModelType.swift in Sources */,
 				1D6100E12456A4170068C625 /* ViperViewController.swift in Sources */,
 				1D6100EF2456AF9A0068C625 /* HomeInteractor.swift in Sources */,
 				1D6100DF2456A3CF0068C625 /* HomeViewController.swift in Sources */,
 				1D6100D72456A1BF0068C625 /* ViewType.swift in Sources */,
+				1D6100F32456B2560068C625 /* WeatherModel.swift in Sources */,
 				1D6100DA2456A1FC0068C625 /* PresenterType.swift in Sources */,
 				1D6100B724569F650068C625 /* AppDelegate.swift in Sources */,
 				1D6100E62456A64D0068C625 /* HomePresenter.swift in Sources */,
