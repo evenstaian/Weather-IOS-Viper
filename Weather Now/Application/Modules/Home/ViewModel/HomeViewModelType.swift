@@ -9,6 +9,5 @@
 import Foundation
 
 protocol HomeViewModelType: ViewModelType {
-    var title: String { get }
-    var showLoadingIndicator: Bool { get }
+    var celcius: Float { get }
 }

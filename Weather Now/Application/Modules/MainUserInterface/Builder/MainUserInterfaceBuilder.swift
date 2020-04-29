@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class MainUserInterfaceBuilder: BuilderType {
+class MainUserInterfaceBuilder: EnvironmentConsumer, BuilderType {
     
     lazy var currentWindow: UIWindow = {
         let window = UIWindow(frame: UIScreen.main.bounds)
@@ -19,7 +19,7 @@ class MainUserInterfaceBuilder: BuilderType {
     }()
     
     func build() -> UIViewController {
-        let builder = HomeBuilder()
+        let builder = HomeBuilder(environment: environment)
         let viewController = builder.build()
         let navigationController = UINavigationController(rootViewController: viewController)
         return navigationController

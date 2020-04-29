@@ -33,6 +33,10 @@
 		1D61010A2456B90A0068C625 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6101092456B90A0068C625 /* Result.swift */; };
 		1D61010C24592E110068C625 /* WebServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D61010B24592E110068C625 /* WebServiceType.swift */; };
 		1D61010E24592F0C0068C625 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D61010D24592F0C0068C625 /* WebService.swift */; };
+		1D610113245930560068C625 /* WeatherDataManagerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D610112245930560068C625 /* WeatherDataManagerType.swift */; };
+		1D6101152459317F0068C625 /* WeatherDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6101142459317F0068C625 /* WeatherDataManager.swift */; };
+		1D6101182459404B0068C625 /* HomeServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6101172459404B0068C625 /* HomeServiceType.swift */; };
+		1D61011A245941330068C625 /* HomeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D610119245941330068C625 /* HomeService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +68,10 @@
 		1D6101092456B90A0068C625 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		1D61010B24592E110068C625 /* WebServiceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceType.swift; sourceTree = "<group>"; };
 		1D61010D24592F0C0068C625 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		1D610112245930560068C625 /* WeatherDataManagerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDataManagerType.swift; sourceTree = "<group>"; };
+		1D6101142459317F0068C625 /* WeatherDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDataManager.swift; sourceTree = "<group>"; };
+		1D6101172459404B0068C625 /* HomeServiceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeServiceType.swift; sourceTree = "<group>"; };
+		1D610119245941330068C625 /* HomeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -307,6 +315,7 @@
 		1D61011024592FF40068C625 /* Weather */ = {
 			isa = PBXGroup;
 			children = (
+				1D610116245940180068C625 /* Service */,
 				1D61011124592FFE0068C625 /* DataManager */,
 			);
 			path = Weather;
@@ -315,8 +324,19 @@
 		1D61011124592FFE0068C625 /* DataManager */ = {
 			isa = PBXGroup;
 			children = (
+				1D610112245930560068C625 /* WeatherDataManagerType.swift */,
+				1D6101142459317F0068C625 /* WeatherDataManager.swift */,
 			);
 			path = DataManager;
+			sourceTree = "<group>";
+		};
+		1D610116245940180068C625 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				1D6101172459404B0068C625 /* HomeServiceType.swift */,
+				1D610119245941330068C625 /* HomeService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -391,6 +411,7 @@
 			files = (
 				1D6100FF2456B62B0068C625 /* EnvironmentType.swift in Sources */,
 				1D6101012456B69A0068C625 /* EnvironmentConsumer.swift in Sources */,
+				1D610113245930560068C625 /* WeatherDataManagerType.swift in Sources */,
 				1D6100ED2456AE840068C625 /* InteractorType.swift in Sources */,
 				1D6100FC2456B5960068C625 /* HomeViewModel.swift in Sources */,
 				1D6100EB2456ADC80068C625 /* HomeInteractorType.swift in Sources */,
@@ -400,7 +421,9 @@
 				1D61010C24592E110068C625 /* WebServiceType.swift in Sources */,
 				1D6100E42456A5A30068C625 /* HomePresenterType.swift in Sources */,
 				1D6100F52456B2670068C625 /* WeatherModelType.swift in Sources */,
+				1D6101182459404B0068C625 /* HomeServiceType.swift in Sources */,
 				1D61010A2456B90A0068C625 /* Result.swift in Sources */,
+				1D61011A245941330068C625 /* HomeService.swift in Sources */,
 				1D6101032456B6EF0068C625 /* Environment.swift in Sources */,
 				1D6100E12456A4170068C625 /* ViperViewController.swift in Sources */,
 				1D6100EF2456AF9A0068C625 /* HomeInteractor.swift in Sources */,
@@ -410,6 +433,7 @@
 				1D61010E24592F0C0068C625 /* WebService.swift in Sources */,
 				1D6100D72456A1BF0068C625 /* ViewType.swift in Sources */,
 				1D6100F32456B2560068C625 /* WeatherModel.swift in Sources */,
+				1D6101152459317F0068C625 /* WeatherDataManager.swift in Sources */,
 				1D6100DA2456A1FC0068C625 /* PresenterType.swift in Sources */,
 				1D6100B724569F650068C625 /* AppDelegate.swift in Sources */,
 				1D6100E62456A64D0068C625 /* HomePresenter.swift in Sources */,

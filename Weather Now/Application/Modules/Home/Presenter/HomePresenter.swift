@@ -10,12 +10,20 @@ import Foundation
 
 class HomePresenter: HomePresenterType {
     
-    //let interactor:
-    //let router
+    let interactor: HomeInteractorType
     weak var delegate: HomePresenterDelegate?
     
-    init(){
-        
+    fileprivate var model : WeatherModelType?
+    
+    init(interactor: HomeInteractorType){
+        self.interactor = interactor
+    }
+    
+    func setHomeViewModel() -> HomeViewModelType{
+        guard let model = self.model else {
+            fatalError("No HomeViewModel")
+        }
+        return HomeViewModel(model: model)
     }
     
     func viewWillBecomeActive() {

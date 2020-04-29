@@ -13,9 +13,12 @@ import CoreLocation
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    private lazy var environment: EnvironmentType = {
+        Environment()
+    }()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        window = MainUserInterfaceBuilder().currentWindow
+        window = MainUserInterfaceBuilder(environment: environment).currentWindow
         
         return true
     }

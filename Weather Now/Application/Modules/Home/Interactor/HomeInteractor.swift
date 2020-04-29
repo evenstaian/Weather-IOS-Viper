@@ -13,7 +13,7 @@ class HomeInteractor: HomeInteractorType {
     //let homeDataManager
     weak var delegate: HomeInteractorDelegate?
     
-    init(){
+    init(weatherDataManager: WeatherDataManagerType){
         
     }
     

@@ -9,12 +9,11 @@
 import Foundation
 import UIKit
 
-class HomeBuilder: BuilderType {
+class HomeBuilder: EnvironmentConsumer, BuilderType {
     
     func build() -> UIViewController {
-        //let interactor
-        //let router
-        let presenter = HomePresenter()
+        let interactor = HomeInteractor(weatherDataManager: environment.homeDataManager)
+        let presenter = HomePresenter(interactor: interactor)
         //let dataSource
         //let delegate
         let view = HomeViewController<HomePresenter>.init(presenter: presenter)

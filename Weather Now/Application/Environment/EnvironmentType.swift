@@ -9,5 +9,5 @@
 import Foundation
 
 protocol EnvironmentType {
-    var homeDataManager : String { get }
+    var homeDataManager : WeatherDataManager { get }
 }

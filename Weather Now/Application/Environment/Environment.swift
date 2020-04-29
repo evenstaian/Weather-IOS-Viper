@@ -11,9 +11,14 @@ import Foundation
 class Environment: EnvironmentType {
     
     let loadURLString = "https://api.openweathermap.org/data/2.5/weather"
+    let param = "?lat=35&lon=139&appid=d7dae841482cf49486336a90a2f68e8a"
+    let webService = WebService()
     
-    // TODO Function
-    var homeDataManager: String = "TODO"
+    lazy var homeDataManager: WeatherDataManager = {
+        let homeService = HomeService(webService: webService, loadUrlString: loadURLString+param)
+        let homeDataManager = WeatherDataManager(service: homeService)
+        return homeDataManager
+    }()
     
     
 }

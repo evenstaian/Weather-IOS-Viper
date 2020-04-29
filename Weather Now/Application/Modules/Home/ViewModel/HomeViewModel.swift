@@ -9,6 +9,11 @@
 import Foundation
 
 struct HomeViewModel: HomeViewModelType {
-    var title: String
-    var showLoadingIndicator: Bool
+    var celcius: Float
+}
+
+extension HomeViewModel {
+    init(model: WeatherModelType) {
+        self.celcius = model.temp
+    }
 }
