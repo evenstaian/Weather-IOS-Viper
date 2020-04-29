@@ -31,6 +31,8 @@
 		1D6101012456B69A0068C625 /* EnvironmentConsumer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6101002456B69A0068C625 /* EnvironmentConsumer.swift */; };
 		1D6101032456B6EF0068C625 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6101022456B6EF0068C625 /* Environment.swift */; };
 		1D61010A2456B90A0068C625 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6101092456B90A0068C625 /* Result.swift */; };
+		1D61010C24592E110068C625 /* WebServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D61010B24592E110068C625 /* WebServiceType.swift */; };
+		1D61010E24592F0C0068C625 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D61010D24592F0C0068C625 /* WebService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +62,8 @@
 		1D6101002456B69A0068C625 /* EnvironmentConsumer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentConsumer.swift; sourceTree = "<group>"; };
 		1D6101022456B6EF0068C625 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		1D6101092456B90A0068C625 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		1D61010B24592E110068C625 /* WebServiceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceType.swift; sourceTree = "<group>"; };
+		1D61010D24592F0C0068C625 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +108,7 @@
 		1D6100CA24569F9E0068C625 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				1D61010F24592FEB0068C625 /* Domains */,
 				1D6100FD2456B6010068C625 /* Environment */,
 				1D6100CB2456A04F0068C625 /* Modules */,
 				1D6100B624569F650068C625 /* AppDelegate.swift */,
@@ -269,6 +274,8 @@
 		1D6101062456B8B00068C625 /* Web */ = {
 			isa = PBXGroup;
 			children = (
+				1D61010B24592E110068C625 /* WebServiceType.swift */,
+				1D61010D24592F0C0068C625 /* WebService.swift */,
 			);
 			path = Web;
 			sourceTree = "<group>";
@@ -287,6 +294,29 @@
 				1D6101092456B90A0068C625 /* Result.swift */,
 			);
 			path = Result;
+			sourceTree = "<group>";
+		};
+		1D61010F24592FEB0068C625 /* Domains */ = {
+			isa = PBXGroup;
+			children = (
+				1D61011024592FF40068C625 /* Weather */,
+			);
+			path = Domains;
+			sourceTree = "<group>";
+		};
+		1D61011024592FF40068C625 /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				1D61011124592FFE0068C625 /* DataManager */,
+			);
+			path = Weather;
+			sourceTree = "<group>";
+		};
+		1D61011124592FFE0068C625 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -367,6 +397,7 @@
 				1D6100DC2456A26E0068C625 /* BuilderType.swift in Sources */,
 				1D6100CF2456A08C0068C625 /* MainUserInterfaceBuilder.swift in Sources */,
 				1D6100D32456A1690068C625 /* HomeBuilder.swift in Sources */,
+				1D61010C24592E110068C625 /* WebServiceType.swift in Sources */,
 				1D6100E42456A5A30068C625 /* HomePresenterType.swift in Sources */,
 				1D6100F52456B2670068C625 /* WeatherModelType.swift in Sources */,
 				1D61010A2456B90A0068C625 /* Result.swift in Sources */,
@@ -376,6 +407,7 @@
 				1D6100F82456B4FF0068C625 /* HomeViewModelType.swift in Sources */,
 				1D6100FA2456B5350068C625 /* ViewModelType.swift in Sources */,
 				1D6100DF2456A3CF0068C625 /* HomeViewController.swift in Sources */,
+				1D61010E24592F0C0068C625 /* WebService.swift in Sources */,
 				1D6100D72456A1BF0068C625 /* ViewType.swift in Sources */,
 				1D6100F32456B2560068C625 /* WeatherModel.swift in Sources */,
 				1D6100DA2456A1FC0068C625 /* PresenterType.swift in Sources */,
